@@ -60,11 +60,38 @@ Answer 6: Below are the methods to verify if the action has been dispatched in r
 
 ## Task 6:
 Question 7: explain the use of `useEffect` hook in React
+Answer 7: The useEffect hook in React is used to perform side effects in function components. It is a powerful and commonly used hook to handle operations such as:<br>
+1. Fetching data from an API or server<br>
+2. Setting up subscriptions or event listeners<br>
+3. Modifying the DOM directly<br>
+4. Cleaning up resources (like timers or subscriptions) when the component unmounts or re-renders<br>
+
 Question 8: What is A High Order Component?
+Answer 8: A Higher-Order Component (HOC) is a pattern in React used to reuse component logic. It is a function that takes a component as an argument and returns a new component with enhanced behavior or additional functionality. HOCs allow you to add cross-cutting concerns (like authentication, state management, or styling) to your components without modifying the original component directly.
+
 Question 9: What use cases would a HOC be usefull?
+Answer 9: A Higher-Order Component (HOC) is useful in the following use cases:
+1. Authentication/Authorization: Redirecting users who are not logged in or do not have proper permissions.
+2. Data Fetching: Injecting data (e.g., from APIs) into components.
+3. Conditional Rendering: Displaying different UI based on conditions (e.g., loading state).
+4. Enhancing Component Props: Modifying or adding props to a component.
+5. State Management: Adding global state or context logic without modifying the component.
+6. Logging or Analytics: Tracking component lifecycle or user interactions for analytics purposes.
+7. Styling: Applying consistent styles or themes across multiple components.
+
 Question 10: What does it indicate when a component is prefixed with `use` and `with`
+Answer 10:
+1. `use` prefix: Typically indicates a custom hook. These are functions that use React’s built-in hooks to encapsulate reusable logic, such as useState, useEffect, etc. Custom hooks follow the use prefix convention to signal that they are hooks.
+
+2. `with` prefix: Typically indicates a Higher-Order Component (HOC). It suggests that the component is being enhanced or wrapped by another component to add functionality or behavior (e.g., withRouter, withAuth).
+
 Question 11: What is a Generic type in typescript?
+Answer 11: A generic type in TypeScript allows you to create reusable components, functions, or classes that can work with any data type, while still maintaining type safety. Instead of specifying a concrete type (like string or number), you use a placeholder type, often referred to as a type parameter, that can be substituted with any specific type when the generic is used.
+
 Question 12: Whats the difference between a controlled and uncontrolled input in React?
+Answer 12: 
+1. Controlled Input: The form data (value) is managed by React state. The input's value is bound to a state variable, and any changes to the input are handled by a state update function.
+2. Uncontrolled Input: The form data is handled by the DOM itself, not React state. You can access the value using a ref but don’t need to update the state manually on every change.
 
 
 
