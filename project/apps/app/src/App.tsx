@@ -60,12 +60,12 @@ const App = () => {
   }
   return (
     <div className="poke-ball">
-      <h2>Pokemon list:</h2>
-      <List {...{ pokemons, params }} />
-      {pokemons.length && <div className='mt-5'>
+      <h2>Pokemon list {totalPokemons}:</h2>
+      <List {...{ pokemons, params, totalPokemons }} />
+      {totalPokemons ? <div className='mt-5'>
         <button onClick={() => paginate("prev")}>Prev</button>
         <button className='ml-1' onClick={() => paginate("next")}>Next</button>
-      </div>}
+      </div> : ""}
     </div>
   )
 }
