@@ -13,13 +13,20 @@ export const List = ({
 
   return (<>
     <div className="pokemon-list-container">
-      {pokemons.length ?
+      {/* {pokemons.length ?
         <ol start={params.offset + 1}>
           {
             pokemons.map((pokemons, index) => {
               return <li key={"pokemon-" + (params.offset + index + 1)}>{toTitleCase(pokemons.name)}</li>
             })}
         </ol> : <p>No pokemons found!!</p>
+      } */}
+
+      {/* Displaying the names as grid layout */}
+      {pokemons.length ?
+        pokemons.map((pokemons, index) => {
+          return <p key={"pokemon-" + (params.offset + index + 1)}>{toTitleCase(pokemons.name)}</p>
+        }) : <p>No pokemons found!!</p>
       }
     </div>
   </>);

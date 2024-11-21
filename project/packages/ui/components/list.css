@@ -3,15 +3,32 @@
     overflow-y: auto;
     scroll-behavior: smooth;
     margin-bottom: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 10px;
+    align-content: start;
+}
+
+.pokemon-list-container p {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .pokemon-list-container::-webkit-scrollbar {
-    width: 10px; 
+    width: 10px;
 }
 
 .pokemon-list-container::-webkit-scrollbar-track {
-    background: #f4f4f4; 
-    border-radius: 5px; 
+    background: #f4f4f4;
+    border-radius: 5px;
 }
 
 .pokemon-list-container::-webkit-scrollbar-thumb {
