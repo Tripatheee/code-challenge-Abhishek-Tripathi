@@ -22,8 +22,11 @@ Start the test by Forking this repository, and complete the following tasks:<br>
 
 ## Task 1:
 Assignment: Use the `api` found in `App.tsx` to make a request and fetch a list of all Pokémon.<br>
-Question 1: How did you manage to fetch the list and what tool did you use?<br>
+Question 1: How did you manage to fetch the list and what tool did you use?<br><br>
+Answer 1: I utilized JavaScript's built-in `fetch` function to send an HTTP request to the provided API endpoint, enabling communication between the client and server. This allowed me to retrieve or send data asynchronously, ensuring smooth and efficient interaction with the backend services as part of the web application.
+<br>
 Question 2: What steps would you take to future improve this?<br>
+Answer 2: In future or further implementations, I would prefer using `axios` as the primary HTTP client for making API requests due to its simplicity, ease of use, and support for features like request/response interception, automatic transformation of JSON data, and handling timeouts, which can greatly streamline the development process and improve the overall efficiency of handling HTTP requests in my applications
 
 commit the code as `task-1`<br>
 

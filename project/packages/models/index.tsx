@@ -1,0 +1,1 @@
+export type { Pokemon,ApiParams } from './models/pokemons.model';

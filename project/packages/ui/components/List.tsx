@@ -1,5 +1,26 @@
-import React from 'react'
+import "./list.css";
+import { toTitleCase } from "../../../apps/app/src/shared/utilities";
+import { ApiParams, Pokemon } from "../../models";
 
-export const List = () => {
-  return <p>List</p>
+interface ListProps {
+  pokemons: Pokemon[],
+  params: ApiParams
+}
+export const List = ({
+  pokemons,
+  params
+}: ListProps) => {
+
+  return (<>
+    <div className="pokemon-list-container">
+      {pokemons.length ?
+        <ol start={params.offset + 1}>
+          {
+            pokemons.map((pokemons, index) => {
+              return <li key={"pokemon-" + (params.offset + index + 1)}>{toTitleCase(pokemons.name)}</li>
+            })}
+        </ol> : <p>No pokemons found!!</p>
+      }
+    </div>
+  </>);
 }
