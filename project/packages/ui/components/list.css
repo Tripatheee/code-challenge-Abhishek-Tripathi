@@ -1,4 +1,25 @@
 .pokemon-list-container {
-    height: 80vh;
+    height: calc(100vh - 120px);
     overflow-y: auto;
+    scroll-behavior: smooth;
+    margin-bottom: 10px;
+}
+
+.pokemon-list-container::-webkit-scrollbar {
+    width: 10px; 
+}
+
+.pokemon-list-container::-webkit-scrollbar-track {
+    background: #f4f4f4; 
+    border-radius: 5px; 
+}
+
+.pokemon-list-container::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+    border: 2px solid #f4f4f4;
+}
+
+.pokemon-list-container::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3;
 }

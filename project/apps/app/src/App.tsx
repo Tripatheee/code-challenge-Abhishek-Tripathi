@@ -41,21 +41,21 @@ const App = () => {
         break;
 
       case "prev":
-        if (params.offset - params.limit > 0) {
+        if (params.offset - params.limit >= 0) {
           setParams({ ...params, offset: params.offset - params.limit });
         }
         break
     }
   }
   return (
-    <>
-      <h1>Pokemon list {totalPokemons}:</h1>
+    <div className="poke-ball">
+      <h2>Pokemon list:</h2>
       <List {...{ pokemons, params }} />
-      {pokemons.length && <>
+      {pokemons.length && <div className='mt-5'>
         <button onClick={() => paginate("prev")}>Prev</button>
-        <button onClick={() => paginate("next")}>Next</button>
-      </>}
-    </>
+        <button className='ml-1' onClick={() => paginate("next")}>Next</button>
+      </div>}
+    </div>
   )
 }
 
